@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>corso tailwind CSS</title>
+        <!--richiamo del cdn con tutte le regole del tailwind-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--impostiamo delle regole nostre che non ci sono sul cdn-->
+        <style>
+            /*rende lo scroll fluido*/
+            html{scroll-behavior: smooth;}
+        </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <!--nav bar che rimane on top con logo testuale e che scompare quando in mobile-->
+    <nav class="bg-white shadow p-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-indigo-600">Brand</a>
+    
+<div class="hidden md:flex space-x-8">
+    <a href="#"class="text-grey-600 hover:text-indigo-600 font-medium">Home</a>
+    <a href="#"class="text-grey-600 hover:text-indigo-600 font-medium">Servizzi</a>
+    <a href="#"class="text-grey-600 hover:text-indigo-600 font-medium">Progetti</a>
+</div>
+<div class="md:hidden text-2xl cursor-pointer">☰</div>
+</div>
+ </nav>
+ <div class="text-center max-w-2xl mx-auto mt-12">
+        <!-- Titolo -->
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+            Pronto a scalare <br>
+            <span class="text-blue-600">il tuo business?</span>
+        </h1>
+
+        <!-- Sottotitolo -->
+        <p class="text-gray-600 text-lg mt-4">
+            Una suite completa di strumenti per gestire team, progetti e finanze in un unico posto.
+        </p>
+
+        <!-- Pulsanti -->
+        <div class="mt-8 flex items-center justify-center gap-4">
+            <a href="#"
+               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                Inizia Gratis
+            </a>
+            <a href="#"
+               class="bg-blue-100 hover:bg-blue-200 text-blue-700 font-semibold py-3 px-6 rounded-xl transition">
+                Demo Live
+            </a>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
